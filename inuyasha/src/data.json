@@ -1,0 +1,72 @@
+
+{
+    "Characters": [
+        {   "id": 1,
+            "name": "inuyasha",
+            "age": 200,
+            "photo": "https://i.pinimg.com/originals/ee/18/9c/ee189c12c77bbee8ab155f8390819361.jpg",
+            "bestPhrase": "Viento Cortante!",
+            "Friends": ["Aome","Miroku","Sango","Shippo"],
+            "City": "Japón"
+        },
+        {   "id": 2,
+            "name": "Aome",
+            "age": 18,
+            "photo": "http://1.bp.blogspot.com/-J_-7YZwFhbw/Tlfej7v3vbI/AAAAAAAAAYs/oAtAmwyL-00/s1600/VACA.jpg",
+            "bestPhrase": "Abajo!",
+            "Friends": ["Inuyasha","Miroku","Sango","Shippo"],
+            "City": "Japón"
+        },
+        {   "id": 3,
+            "name": "Miroku",
+            "age": 21,
+            "photo": "https://ae01.alicdn.com/kf/HTB17ke.j26H8KJjy0Fjq6yXepXaY.jpg",
+            "bestPhrase": "Le gustaria tener un hijo conmigo?",
+            "Friends": ["Inuyasha","Aome","Sango","Shippo"],
+            "City": "Japón"
+        },
+        {   "id": 4,
+            "name": "Sango",
+            "age": 19,
+            "photo": "https://pm1.narvii.com/6281/7b232298876190f880cb4e815b24c360de4f14de_hq.jpg",
+            "bestPhrase": "hiraikotsu!",
+            "Friends": ["Inuyasha","Miroku","Aome","Shippo"],
+            "City": "Japón"
+        },
+        {   "id": 5,
+            "name": "Shippo",
+            "age": 7,
+            "photo": "http://pm1.narvii.com/6586/a1efaea9b6ab706f618e58795bb0b1364c07d77a_00.jpg",
+            "bestPhrase": "Fuego Magico!",
+            "Friends": ["Aome","Miroku","Sango","Inuyasha"],
+            "City": "Japón"
+        },
+        {   "id": 6,
+            "name": "sesshomaru",
+            "age": 1000,
+            "photo": "https://pm1.narvii.com/6321/103070e6669981efe94119535eaa1d989c333723_hq.jpg",
+            "bestPhrase": "Nada vale mas que la vida de Rin!",
+            "Friends": ["Rin","Jaken"],
+            "City": "Japón"
+        },
+
+        {   "id": 7,
+            "name": "Rin",
+            "age": 32 ,
+            "photo": "https://i.ytimg.com/vi/15VV_EH664g/maxresdefault.jpg",
+            "bestPhrase": "Señor Sesshomaru!",
+            "Friends": ["Sesshomaru","Jaken"],
+            "City": "Japón"
+        },
+
+        {   "id": 8,
+            "name": "Jaken",
+            "age": 200 ,
+            "photo": "http://pm1.narvii.com/6280/03759c429df6bcf0791857204c19479831ecb3b6_00.jpg",
+            "bestPhrase": "Amo Bonito!",
+            "Friends": ["Rin","Sesshomaru"],
+            "City": "Japón"
+        }
+        
+    ]
+}
