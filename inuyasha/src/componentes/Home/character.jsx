@@ -19,5 +19,3 @@ export default class Character extends React.Component{
     }
 }
 
-{/*<img src={Inuyasha} alt="nada" />
-<p>{this.props.Data.Characters[0].photo}</p>*/}
