@@ -9,11 +9,11 @@ export default class NavBar extends React.Component{
 
     render(){
         return (
-            <div>
+            <nav>
                <a href="#">Inuyasha</a>
                <a href="#">Character Detail</a>
                <a href="#">About</a>             
-            </div>
+            </nav>
             
         )
     }
