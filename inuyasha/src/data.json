@@ -6,7 +6,7 @@
             "age": 200,
             "photo": "https://i.pinimg.com/originals/ee/18/9c/ee189c12c77bbee8ab155f8390819361.jpg",
             "bestPhrase": "Viento Cortante!",
-            "Friends": ["Aome","Miroku","Sango","Shippo"],
+            "Friends": ["Aome","Miroku","Sango","Shippo","Kikyo"],
             "City": "Japón"
         },
         {   "id": 2,
@@ -66,7 +66,43 @@
             "bestPhrase": "Amo Bonito!",
             "Friends": ["Rin","Sesshomaru"],
             "City": "Japón"
+        },
+        
+        {   "id": 9,
+            "name": "Kikyo",
+            "age": 18 ,
+            "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQTcsEJBd_R49ftOeTwZUwbFyvm0oYWMRIA&usqp=CAU",
+            "bestPhrase": "Cada quien crea su propio destino.",
+            "Friends": ["Inuyasha"],
+            "City": "Japón"
+        },
+        {   "id": 10,
+            "name": "Naraku",
+            "age": 50 ,
+            "photo": "https://vignette.wikia.nocookie.net/inuyasha/images/6/67/Naraku_.jpg/revision/latest/scale-to-width-down/340?cb=20170216143741&path-prefix=es",
+            "bestPhrase": "El camino al infierno no es un demonio, no puede cortarlo cuando este no posee energía.",
+            "Friends": ["Kagura,Kana"],
+            "City": "Japón"
+        },
+
+        {   "id": 11,
+            "name": "Kagura",
+            "age":  17  ,
+            "photo": "http://pm1.narvii.com/6279/bafc9868975b4fc0811380474922d56de282c784_00.jpg",
+            "bestPhrase": "Al menos te pude ver una vez mas... es todo lo que necesitaba",
+            "Friends": ["Naraku,Kana"],
+            "City": "Japón"
+        },
+        {   "id":  12,
+            "name": "Kana",
+            "age": 6 ,
+            "photo": "https://pm1.narvii.com/6527/153876e26624ab0a3e88cedc3337650d23b978a0_hq.jpg",
+            "bestPhrase": "La flores se marchitan y pierden su color",
+            "Friends": ["Kagura,Naraku"],
+            "City": "Japón"
         }
         
+
+ 
     ]
 }

@@ -1,12 +1,7 @@
-import React from "react"
+import React,{useState} from "react"
 
-export default class About extends React.Component{
-    constructor(props){
-        super(props)
+export default function About(){
 
-    }
-
-    render(){
         return (
             <div>
             <h1>Acerca de mi</h1>
@@ -18,5 +13,5 @@ export default class About extends React.Component{
             </div>
             
         )
-    }
+    
 }
