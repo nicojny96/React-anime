@@ -1,11 +1,17 @@
 import React ,{useState} from "react";
 import Inuyasha from "../../../src/data.json"
+import { useParams } from "react-router";
 
 export default function CharacterDetail(){
+
+  const parametros = useParams();
  
-  const [state,setState] = useState({
-    currentElement: Inuyasha.Characters[0],
-  })
+  const [state,setState] = useState(
+    {currentElement: ( Object.keys(parametros).length === 0 )? Inuyasha.Characters[0]: Inuyasha.Characters.find(
+      (element) => element.id == parametros.id
+    ),},
+    )
+
 
   function onChangeInput(event){
             setState(() => {
@@ -16,8 +22,12 @@ export default function CharacterDetail(){
               };
             });
   }
+
+ 
+  if(( Object.keys(parametros).length === 0 )){
     return (
       <div>
+
         <select
           onChange={(event) => {
             onChangeInput(event);
@@ -29,7 +39,6 @@ export default function CharacterDetail(){
             </option>
           ))}
         </select>
-          {console.log(state.currentElement.name)}
           <div>
           <h3>{state.currentElement.name }</h3>
           <div>
@@ -48,5 +57,30 @@ export default function CharacterDetail(){
         </div>
       </div>
     );
+  } else{
 
+
+    return (
+
+      <div>
+        {console.log(parametros)}
+        {console.log(state.currentElement)}
+        <div>
+          <h3>{state.currentElement.name }</h3>
+          <h3> Character Details</h3>
+          <p> Edad: {state.currentElement.age + " años"}</p>
+          <p> Frese favorita: {state.currentElement.bestPhrase}</p>
+          <p> Amigos: </p>
+          {state.currentElement.Friends.map((amigo) => (
+              <u1>
+                  <li>{amigo}</li>
+              </u1>
+          ))}
+          <p> Ciudad: {state.currentElement.City}</p>
+        </div>
+      </div>
+    );
+      
+  }
+  
 }

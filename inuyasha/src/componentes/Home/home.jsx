@@ -1,19 +1,19 @@
 import React from "react"
 import Character from "./character"
-import Inuyasha from "../../../src/data.json"
+
 
 export default class Home extends React.Component{
     constructor(props){
         super(props)
-       
+        this.personajes = this.props.personajes
     }
 
     render(){
         return (
             
             <div>
-            {Inuyasha.Characters.slice(0, 5).map((personaje) => {
-            return <Character name={personaje.name} photo={personaje.photo}/>
+            {this.personajes.slice(0, 10).map((personaje) => {
+            return <Character name={personaje.name}   photo={personaje.photo} id={personaje.id}/>
             })}
             </div>
             

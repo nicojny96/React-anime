@@ -1,10 +1,12 @@
 import React,{useState} from "react"
 import Inuyasha from "../../../src/img/Inuyasha.png"
+import { Link } from "react-router-dom";
 
 export default function Character(props){
 
         const [name,setSanme] = useState(props.name);
         const [photo,setPhoto] = useState(props.photo);
+        const [id,setId] = useState(props.id);
 
         /*como un objeto*/
         /*const[state,setState] = useState({
@@ -15,7 +17,7 @@ export default function Character(props){
         return (
             <div>
              <h1>{name}</h1> 
-             <img src={photo} alt="nada"/>
+             <Link to={`/charDetail/${id}`} ><img src={photo} alt="nada"/></Link>
             </div>
        
         )

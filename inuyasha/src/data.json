@@ -42,7 +42,7 @@
             "City": "Japón"
         },
         {   "id": 6,
-            "name": "sesshomaru",
+            "name": "SesshomarU",
             "age": 1000,
             "photo": "https://pm1.narvii.com/6321/103070e6669981efe94119535eaa1d989c333723_hq.jpg",
             "bestPhrase": "Nada vale mas que la vida de Rin!",
@@ -81,7 +81,7 @@
             "age": 50 ,
             "photo": "https://vignette.wikia.nocookie.net/inuyasha/images/6/67/Naraku_.jpg/revision/latest/scale-to-width-down/340?cb=20170216143741&path-prefix=es",
             "bestPhrase": "El camino al infierno no es un demonio, no puede cortarlo cuando este no posee energía.",
-            "Friends": ["Kagura,Kana"],
+            "Friends": ["Kagura","Kana"],
             "City": "Japón"
         },
 
@@ -90,7 +90,7 @@
             "age":  17  ,
             "photo": "http://pm1.narvii.com/6279/bafc9868975b4fc0811380474922d56de282c784_00.jpg",
             "bestPhrase": "Al menos te pude ver una vez mas... es todo lo que necesitaba",
-            "Friends": ["Naraku,Kana"],
+            "Friends": ["Naraku","Kana"],
             "City": "Japón"
         },
         {   "id":  12,
@@ -98,7 +98,7 @@
             "age": 6 ,
             "photo": "https://pm1.narvii.com/6527/153876e26624ab0a3e88cedc3337650d23b978a0_hq.jpg",
             "bestPhrase": "La flores se marchitan y pierden su color",
-            "Friends": ["Kagura,Naraku"],
+            "Friends": ["Kagura","Naraku"],
             "City": "Japón"
         }
         
