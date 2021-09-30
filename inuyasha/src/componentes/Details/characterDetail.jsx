@@ -1,4 +1,4 @@
-import React ,{useState} from "react";
+import React ,{useState,useEffect} from "react";
 import Inuyasha from "../../../src/data.json"
 import { useParams } from "react-router";
 
@@ -11,6 +11,20 @@ export default function CharacterDetail(){
       (element) => element.id == parametros.id
     ),},
     )
+
+  useEffect(() => {
+
+    if ( Object.keys(parametros).length === 0 ){
+      setState({...state, currentElement:Inuyasha.Characters[0]})
+    }
+    else{
+      setState({...state, currentElement:Inuyasha.Characters.find(
+        (element) => element.id == parametros.id
+      ),})
+    }
+   
+  },[parametros])
+   
 
 
   function onChangeInput(event){
