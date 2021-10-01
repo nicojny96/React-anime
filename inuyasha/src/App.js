@@ -11,7 +11,7 @@ import {Switch,Route} from "react-router-dom";
 
 export default function App() {
   
-    const [characterInfo,setCharacterInfo] = useState([])
+    const [characterInfo,setCharacterInfo] = useState(Data.Characters)
 
   useEffect(() => {
     setCharacterInfo (Data.Characters)
@@ -25,10 +25,10 @@ export default function App() {
             <Home personajes = {characterInfo}/>
           </Route>
           <Route exact path="/charDetail">
-            <CharacterDetail />
+            <CharacterDetail personajes = {characterInfo}/>
           </Route>
           <Route  path="/charDetail/:id">
-            <CharacterDetail />
+            <CharacterDetail personajes = {characterInfo}/>
           </Route>
           <Route path="/About">
            <About/>

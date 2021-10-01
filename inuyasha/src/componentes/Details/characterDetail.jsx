@@ -2,23 +2,21 @@ import React ,{useState,useEffect} from "react";
 import Inuyasha from "../../../src/data.json"
 import { useParams } from "react-router";
 
-export default function CharacterDetail(){
+export default function CharacterDetail(props){
 
   const parametros = useParams();
- 
+
   const [state,setState] = useState(
-    {currentElement: ( Object.keys(parametros).length === 0 )? Inuyasha.Characters[0]: Inuyasha.Characters.find(
-      (element) => element.id == parametros.id
-    ),},
+    {currentElement: props.personajes[0]},
     )
 
   useEffect(() => {
 
     if ( Object.keys(parametros).length === 0 ){
-      setState({...state, currentElement:Inuyasha.Characters[0]})
+      setState({...state, currentElement:props.personajes[0]})
     }
     else{
-      setState({...state, currentElement:Inuyasha.Characters.find(
+      setState({...state, currentElement:props.personajes.find(
         (element) => element.id == parametros.id
       ),})
     }
@@ -30,7 +28,7 @@ export default function CharacterDetail(){
   function onChangeInput(event){
             setState(() => {
               return {
-                currentElement: Inuyasha.Characters.find(
+                currentElement: props.personajes.find(
                   (element) => element.id == event.target.value
                 ),
               };
@@ -46,9 +44,10 @@ export default function CharacterDetail(){
           onChange={(event) => {
             onChangeInput(event);
           }}
+          
         >
-         {Inuyasha.Characters.map((element) => (
-            <option value={element.id}>
+         {props.personajes.map((element) => (
+            <option value={element.id} selected={element.id === state.currentElement.id}>
               {element.name}
             </option>
           ))}
