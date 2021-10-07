@@ -1,7 +1,7 @@
 import React ,{useState,useEffect} from "react";
 import { useParams } from "react-router";
 import { Card, Image, Row, Container as Contenedor } from "react-bootstrap";
-
+import "./characterDetail"
 
 
 export default function CharacterDetail(props){
@@ -93,45 +93,29 @@ export default function CharacterDetail(props){
   } else{
     
     return (
-      <div className="col-8">
-
-        <Card className="text-white bg-primary">
-          <Card.Header className="fs-4">{`${state.currentElement.name}`}</Card.Header>
-          <Card.Body>
-            <Card.Text>
-              {`tiene ${state.currentElement.age} años, vive en ${state.currentElement.City} y su frase
-              favorita es: "${state.currentElement.bestPhrase}"`}
-            </Card.Text>
-            <Card.Title> Sus amigos son:</Card.Title>
-            <Card.Text>
-            {state.currentElement.Friends.map((amigo) => (
-                <u1>
-                    <li>{amigo}</li>
-                </u1>
-            ))}
-            </Card.Text>
-          </Card.Body>
-        </Card>
-
-
-
-
-        {/* {console.log(parametros)}
-        {console.log(state.currentElement)}
-        <div>
-          <h3>{state.currentElement.name }</h3>
-          <h3> Character Details</h3>
-          <p> Edad: {state.currentElement.age + " años"}</p>
-          <p> Frese favorita: {state.currentElement.bestPhrase}</p>
-          <p> Amigos: </p>
-          {state.currentElement.Friends.map((amigo) => (
-              <u1>
-                  <li>{amigo}</li>
-              </u1>
-          ))}
-          <p> Ciudad: {state.currentElement.City}</p>
-        </div> */}
-      </div>
+     
+        <div  style={{display:"flex", justifyContent: "center"}}>
+          <div className="col-8">
+          
+            <Card className="text-white bg-primary">
+              <Card.Header className="fs-4">{`${state.currentElement.name}`}</Card.Header>
+              <Card.Body>
+                <Card.Text>
+                  {`tiene ${state.currentElement.age} años, vive en ${state.currentElement.City} y su frase
+                  favorita es: "${state.currentElement.bestPhrase}"`}
+                </Card.Text>
+                <Card.Title> Sus amigos son:</Card.Title>
+                <Card.Text>
+                {state.currentElement.Friends.map((amigo) => (
+                    <u1>
+                        <li>{amigo}</li>
+                    </u1>
+                ))}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            </div>
+          </div>
     );
       
   }
