@@ -8,6 +8,7 @@ import About from './componentes/About/about';
 import {useEffect} from 'react';
 import Data from "./data.json"
 import {Switch,Route} from "react-router-dom";
+import { Container as Contenedor} from "react-bootstrap";
 
 export default function App() {
   
@@ -20,6 +21,7 @@ export default function App() {
     return (
       <div> 
         <NavBar/>
+        <Contenedor className="text-center">
         <Switch> 
           <Route exact path="/">
             <Home personajes = {characterInfo}/>
@@ -35,7 +37,7 @@ export default function App() {
           </Route>
         
         </Switch> 
-        
+      </Contenedor>
       </div>
     );
   

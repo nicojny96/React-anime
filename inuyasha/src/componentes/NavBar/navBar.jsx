@@ -1,5 +1,6 @@
 import React from "react"
-import {Link,NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 
 export default class NavBar extends React.Component{
@@ -10,11 +11,15 @@ export default class NavBar extends React.Component{
 
     render(){
         return (
-            <nav>
-              <Link to="/">Inuyasha</Link>
-              <Link to="/charDetail">CharacterDetail</Link>
-              <Link to="/About">About</Link>          
-            </nav>
+            <Navbar className="mb-4" bg="primary" variant="dark">
+              <Container>
+              <Link className="navbar-brand" to="/">Inuyasha</Link>
+              <Nav>
+                <Link className="nav-link" to="/charDetail">CharacterDetail</Link>
+                <Link className="nav-link" to="/About">About</Link> 
+              </Nav>
+              </Container>         
+            </Navbar>
             
         )
     }

@@ -1,0 +1,10 @@
+.carta-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.carta-link:hover {
+  box-shadow: 5px 10px 20px 3px rgb(255, 0, 0);
+  transition: all 0.5s;
+  color: rgb(255, 0, 0);
+}
