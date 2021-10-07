@@ -115,7 +115,8 @@ export default function About() {
 
       <p>Pais: Argentina</p> 
       <p>Ciudad: San Salvador de Jujuy</p> 
-      <p>Email: nicojny96@gmail.com</p> 
+      <p>Email: nicojny96@gmail.com</p>
+      <p>Linkedin: Nicolas Yañez</p>
       <p>Estudiante de Ingenieria Informatica en Fi-Unju</p> 
     </div>
   );
