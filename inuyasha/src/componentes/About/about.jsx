@@ -63,7 +63,19 @@ export default function About() {
   return (
     <div >
 
-      {console.log(fails)}
+      <p>
+        <h2>
+            <Badge>Jorge Nicolas Yañez</Badge>
+        </h2>
+      </p>
+
+      <p>Pais: Argentina</p> 
+      <p>Ciudad: San Salvador de Jujuy</p> 
+      <p>Email: nicojny96@gmail.com</p>
+      <p>Linkedin: Nicolas Yañez</p>
+      <p>Estudiante de Ingenieria Informatica en Fi-Unju</p> 
+
+      <h2 style={{textAlign:"left"}}  ><Badge>Contacto</Badge></h2>
     <Form style={{textAlign:"left"}}  onSubmit={(e) => onsubmitform(e)}>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Email address</Form.Label>
@@ -107,17 +119,7 @@ export default function About() {
         </Button>
     </Form>
 
-      <p>
-        <h2>
-            <Badge>Jorge Nicolas Yañez</Badge>
-        </h2>
-      </p>
 
-      <p>Pais: Argentina</p> 
-      <p>Ciudad: San Salvador de Jujuy</p> 
-      <p>Email: nicojny96@gmail.com</p>
-      <p>Linkedin: Nicolas Yañez</p>
-      <p>Estudiante de Ingenieria Informatica en Fi-Unju</p> 
     </div>
   );
 }
