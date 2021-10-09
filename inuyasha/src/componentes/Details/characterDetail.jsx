@@ -94,7 +94,15 @@ export default function CharacterDetail(props){
     
     return (
      
-        <div  style={{display:"flex", justifyContent: "center"}}>
+       <Row >
+          <div className="col-4">
+            <Image
+              src={state.currentElement.photo}
+              alt="imagen"
+              roundedCircle
+              style={{ height: "17rem", width: "15rem" }}
+            />
+          </div>
           <div className="col-8">
           
             <Card className="text-white bg-primary">
@@ -115,7 +123,7 @@ export default function CharacterDetail(props){
               </Card.Body>
             </Card>
             </div>
-          </div>
+        </Row>
     );
       
   }
